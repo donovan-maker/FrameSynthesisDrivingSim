@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving Sim</title>
+    <style>
+        /* General body and HTML settings */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center everything horizontally */
+            justify-content: flex-start; /* Align content at the top */
+        }
+
+        /* Container for centering the iframe */
+        .iframe-container {
+            width: 80%; /* Width set to 80% of the parent (body), can adjust */
+            max-width: 728px; /* Set maximum width */
+            height: 0;
+            padding-top: 95%;
+            padding-left: 80%;
+            position: relative;
+            margin-top: 20px; /* Add some space above */
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* Make iframe fill the container */
+            height: 100%; /* Make iframe fill the container */
+            border: none;
+        }
+
+        /* Left-justified text styling */
+        .text-content {
+            width: 80%; /* Same width as iframe container */
+            max-width: 728px; /* Max width */
+            padding: 10px;
+            text-align: left; /* Left justify the text */
+        }
+
+        h1, h2, p {
+            margin: 10px 0;
+        }
+
+        /* Small adjustments for consistency */
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-container">
+        <iframe src="./iframe.html" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <div class="text-content">
+        <h1>Google Maps API Isometric Driving Sim</h1>
+        <p>Thanks to Frame Synthesis for the original code.</p>
+
+        <h2 id="whats-this">What&rsquo;s this?</h2>
+        <p>You can drive vehicles on Google Maps. You can drive safely, ignore roads, park, race on a circuit, and travel around the world. You can play in any way you want!</p>
+
+        <h2 id="how-to-drive">How to drive</h2>
+        <p>Left / Right arrow keys: Steering<br>
+        Up / Down arrow keys: Go forward and backward</p>
+        <p>On smartphones or tablets, use the virtual stick.</p>
+
+        <h2 id="credits">Credits</h2>
+        <p>Programming - Katsuomi Kobayashi (korinVR)</p>
+        <p>iFrame Port - Donovan Black (donovan-maker)</p>
+    </div>
+</body>
+</html>
